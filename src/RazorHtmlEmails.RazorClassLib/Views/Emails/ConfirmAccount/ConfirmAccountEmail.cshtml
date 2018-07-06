@@ -1,0 +1,27 @@
+﻿@using RazorHtmlEmails.RazorClassLib.Views.Emails.ConfirmAccount
+@using RazorHtmlEmails.RazorClassLib.Views.Shared
+@model ConfirmAccountEmailViewModel
+
+@{
+    ViewData["EmailTitle"] = "Welcome!";
+}
+
+<p>
+    We're excited to have you get started. First, you need to confirm your account. Just press the button below.
+</p>
+
+<br />
+
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Confirm Account", Model.ConfirmEmailUrl))
+
+<br />
+
+<p>
+    If you have any questions, just reply to this email—we're always happy to help out.
+</p>
+
+<br />
+
+<p>
+    The Contoso Team
+</p>
