@@ -8,4 +8,8 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RazorHtmlEmails.Common\RazorHtmlEmails.Common.csproj" />
+  </ItemGroup>
+
 </Project>

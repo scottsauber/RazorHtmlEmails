@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RazorHtmlEmails.Common;
+using RazorHtmlEmails.RazorClassLib.Services;
 
 namespace RazorHtmlEmails.AspNetCore
 {
@@ -31,6 +33,8 @@ namespace RazorHtmlEmails.AspNetCore
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddScoped<IRegisterAccountService, RegisterAccountService>();
+            services.AddScoped<IRazorViewToStringRenderer, RazorViewToStringRenderer>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
