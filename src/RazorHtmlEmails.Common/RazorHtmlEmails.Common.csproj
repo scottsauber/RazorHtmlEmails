@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj" />
+    <ProjectReference Include="..\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj" />
   </ItemGroup>
 
 </Project>

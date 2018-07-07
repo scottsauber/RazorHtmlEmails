@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.AspNetCore", "RazorHtmlEmails.AspNetCore\RazorHtmlEmails.AspNetCore.csproj", "{47CAE758-0113-4D48-AB00-9BE33CD7164C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorHtmlEmails.RazorClassLib", "..\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj", "{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.RazorClassLib", "..\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj", "{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorHtmlEmails.Common", "RazorHtmlEmails.Common\RazorHtmlEmails.Common.csproj", "{409A6EEB-359A-4918-9C27-3D6EAA0523D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.Common", "..\RazorHtmlEmails.Common\RazorHtmlEmails.Common.csproj", "{98E82720-7E76-46AB-BCAB-FA9F698B30C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}.Release|Any CPU.Build.0 = Release|Any CPU
-		{409A6EEB-359A-4918-9C27-3D6EAA0523D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{409A6EEB-359A-4918-9C27-3D6EAA0523D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{409A6EEB-359A-4918-9C27-3D6EAA0523D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{409A6EEB-359A-4918-9C27-3D6EAA0523D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E82720-7E76-46AB-BCAB-FA9F698B30C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E82720-7E76-46AB-BCAB-FA9F698B30C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E82720-7E76-46AB-BCAB-FA9F698B30C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E82720-7E76-46AB-BCAB-FA9F698B30C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
