@@ -9,3 +9,4 @@ This is a demo to demonstrate how to use Razor class library to create reusable 
 1. [Walkthrough: Creating an HTML Email Template with Razor and Razor Class Libraries and Rendering it from a .NET Standard Class Library](https://scottsauber.com/2018/07/07/walkthrough-creating-an-html-email-template-with-razor-and-razor-class-libraries-and-rendering-it-from-a-net-standard-class-library/comment-page-1/#comment-1048)
 2. [Litmus makes your email better](https://litmus.com/)
 3. [Papercut Simple Desktop SMTP Server](https://github.com/ChangemakerStudios/Papercut)
+4. [A cross-platform .NET library for IMAP, POP3, and SMTP.](http://www.mimekit.net/)
