@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace RazorHtmlEmails.RazorClassLib.Services
 {
-    // Code from: https://github.com/aspnet/Entropy/blob/dev/samples/Mvc.RenderViewToString/RazorViewToStringRenderer.cs
+    // Code from: https://github.com/aspnet/Entropy/blob/master/samples/Mvc.RenderViewToString/RazorViewToStringRenderer.cs
 
     public class RazorViewToStringRenderer : IRazorViewToStringRenderer
     {
