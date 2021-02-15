@@ -21,7 +21,7 @@ namespace RazorHtmlEmails.Common
         public async Task Register(string email, string baseUrl)
         {
             // TODO: Validation + actually add the User to a DB + whatever else
-            // TODO: Base URL off of ASP.NET Core Identity's logic or some other mechanism, rather than hardcoding to creating a random guid
+            // TODO: Base URL off of ASP.NET Core Identity's logic or some other mechanism, rather than hard coding to creating a random guid
             var confirmAccountModel = new ConfirmAccountEmailViewModel($"{baseUrl}/{Guid.NewGuid()}");
 
             string body = await _razorViewToStringRenderer.RenderViewToStringAsync("/Views/Emails/ConfirmAccount/ConfirmAccountEmail.cshtml", confirmAccountModel);
@@ -35,10 +35,10 @@ namespace RazorHtmlEmails.Common
         private void SendEmail(List<string> toAddresses, string fromAddress, string subject, string body)
         {
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress(fromAddress));
+            message.From.Add(new MailboxAddress("SenderFirstName SenderLastName", fromAddress));
             foreach (var to in toAddresses)
             {
-                message.To.Add(new MailboxAddress(to));
+                message.To.Add(new MailboxAddress("RecipientFirstName RecipientLastName", to));
             }
             message.Subject = subject;
 
@@ -47,16 +47,16 @@ namespace RazorHtmlEmails.Common
                 Text = body
             };
 
-            using (var client = new SmtpClient())
+            using var client = new SmtpClient
             {
                 // For demo-purposes, accept all SSL certificates
-                client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                ServerCertificateValidationCallback = (_, _, _, _) => true
+            };
 
-                client.Connect("127.0.0.1", 25, false);
+            client.Connect("127.0.0.1", 25, false);
 
-                client.Send(message);
-                client.Disconnect(true);
-            }
+            client.Send(message);
+            client.Disconnect(true);
         }
     }
 
