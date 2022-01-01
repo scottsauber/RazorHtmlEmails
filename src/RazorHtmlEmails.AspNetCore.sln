@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.AspNetCore", "RazorHtmlEmails.AspNetCore\RazorHtmlEmails.AspNetCore.csproj", "{47CAE758-0113-4D48-AB00-9BE33CD7164C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.AspNetCore", ".\RazorHtmlEmails.AspNetCore\RazorHtmlEmails.AspNetCore.csproj", "{47CAE758-0113-4D48-AB00-9BE33CD7164C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.RazorClassLib", "..\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj", "{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.RazorClassLib", ".\RazorHtmlEmails.RazorClassLib\RazorHtmlEmails.RazorClassLib.csproj", "{10A6B480-D0A5-4D62-AED1-4F32FB3E5172}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.Common", "..\RazorHtmlEmails.Common\RazorHtmlEmails.Common.csproj", "{98E82720-7E76-46AB-BCAB-FA9F698B30C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorHtmlEmails.Common", ".\RazorHtmlEmails.Common\RazorHtmlEmails.Common.csproj", "{98E82720-7E76-46AB-BCAB-FA9F698B30C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
